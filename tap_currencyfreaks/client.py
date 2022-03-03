@@ -81,7 +81,7 @@ class CurrencyFreaksStream(RESTStream):
         """As needed, append or transform raw data to match expected structure."""
         parsed_date = parse_datetime(row['date'])
         # Fake ID: just the timestamp
-        row['id'] = math.floor(parsed_date.timestamp())
+        row['id'] = f"{math.floor(parsed_date.timestamp())}"
         # And fix type of date to parsed
         row['date'] = parsed_date
         return row
