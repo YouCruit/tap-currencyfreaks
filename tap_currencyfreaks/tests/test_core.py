@@ -7,8 +7,7 @@ from singer_sdk.testing import get_standard_tap_tests
 from tap_currencyfreaks.tap import TapCurrencyFreaks
 
 SAMPLE_CONFIG = {
-    "start_date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")
-    # TODO: Initialize minimal tap config
+    "api_key": "INSERT-API-KEY-HERE"
 }
 
 
