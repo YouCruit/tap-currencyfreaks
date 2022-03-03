@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tap-currencyfreaks"
-version = "0.0.1"
+version = "1.0.0"
 description = "`tap-currencyfreaks` is a Singer tap for CurrencyFreaks, built with the Meltano SDK for Singer Taps."
 authors = ["Jonas Kalderstam"]
 keywords = [
