@@ -32,6 +32,7 @@ class LatestStream(CurrencyFreaksStream):
         th.Property(
             "rates",
             th.PropertiesList(
+                th.Property("AGLD", th.NumberType),
                 th.Property("FJD", th.NumberType),
                 th.Property("MATIC", th.NumberType),
                 th.Property("MXN", th.NumberType),
