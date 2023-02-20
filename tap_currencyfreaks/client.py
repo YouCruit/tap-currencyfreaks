@@ -84,4 +84,8 @@ class CurrencyFreaksStream(RESTStream):
         row['id'] = f"{math.floor(parsed_date.timestamp())}"
         # And fix type of date to parsed
         row['date'] = parsed_date
+        # Rates are returned as strings so fix to proper numeric type
+        rates = row['rates']
+        for rate in rates:
+            rates[rate] = float(rates[rate])
         return row
